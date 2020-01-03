@@ -78,7 +78,7 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="176dp"
-        android:background="@drawable/button_bar_backgroud"
+        android:background="@drawable/button_bottom_background"
         android:fontFamily="@font/josefinsansbold"
         android:text="@string/back_button"
         android:textAllCaps="false"
