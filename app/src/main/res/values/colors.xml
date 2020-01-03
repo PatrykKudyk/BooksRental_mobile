@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBlueOrigin">#0FAED4</color>
+    <color name="colorBlueLight">#e6eeff</color>
+    <color name="colorPurpleDownLogo">#4040BF</color>
+
 </resources>
