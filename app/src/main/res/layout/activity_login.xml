@@ -68,6 +68,7 @@
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/login_button"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
