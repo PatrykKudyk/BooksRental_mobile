@@ -11,10 +11,10 @@ class LogoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_logo)
-//        Handler().postDelayed({
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//        },2800)
+        Handler().postDelayed({
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        },3700)
     }
 
     override fun onBackPressed() {

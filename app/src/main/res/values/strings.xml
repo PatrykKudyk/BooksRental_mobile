@@ -2,4 +2,7 @@
     <string name="app_name">BooksRental_mobile</string>
     <string name="logo_app_name">Wypożyczalnia książek</string>
     <string name="login_activity_title">Logowanie</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Hasło</string>
+    <string name="login_button">Zaloguj</string>
 </resources>
