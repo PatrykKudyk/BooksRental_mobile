@@ -5,4 +5,9 @@
     <string name="hint_login">Login</string>
     <string name="hint_password">Hasło</string>
     <string name="login_button">Zaloguj</string>
+    <string name="back_button">Wróć</string>
+    <string name="user_menu_title">Co chciałbyś zrobić?</string>
+    <string name="show_rentals_button">Sprawdź książki w wypożyczalniach</string>
+    <string name="show_author_books_button">Wyszukaj książki danego autora</string>
+    <string name="search_books_by_name_button">Wyszukaj książki po tytule</string>
 </resources>
