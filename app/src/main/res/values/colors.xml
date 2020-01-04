@@ -6,6 +6,7 @@
 
     <color name="colorBlueOrigin">#0FAED4</color>
     <color name="colorBlueLight">#e6eeff</color>
+    <color name="colorBlueOriginLight">#70daf5</color>
     <color name="colorPurpleDownLogo">#4040BF</color>
     <color name="colorPurpleLight">#8080FF</color>
     <color name="colorPurpleMedium">#7355F2</color>
