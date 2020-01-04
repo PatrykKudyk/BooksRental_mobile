@@ -1,4 +1,4 @@
 package com.e.booksrental_mobile.Models
 
-class Rental {
+class Rental(val id: Long, val name: String, val books: List<Book>, val location: Location) {
 }
