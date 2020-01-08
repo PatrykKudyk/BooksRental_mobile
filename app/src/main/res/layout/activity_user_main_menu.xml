@@ -73,14 +73,14 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/logout_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="176dp"
         android:background="@drawable/button_bottom_background"
         android:fontFamily="@font/josefinsansbold"
-        android:text="@string/back_button"
+        android:text="@string/logout_button"
         android:textAllCaps="false"
         android:textColor="@color/colorBlueLight"
         android:textSize="14sp"

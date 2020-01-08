@@ -15,6 +15,7 @@ class UserMainMenu : AppCompatActivity() {
         val rentalBooksButton = this.findViewById(R.id.show_rentals_button) as Button
         val authorBooksButton = this.findViewById(R.id.show_author_books_button) as Button
         val booksByNameButton = this.findViewById(R.id.search_books_by_name_button) as Button
+        val logoutButton = this.findViewById(R.id.logout_button) as Button
 
         rentalBooksButton.setOnClickListener {
             val intent = Intent(this, RentalListActivity::class.java)
@@ -29,6 +30,9 @@ class UserMainMenu : AppCompatActivity() {
 
         }
 
+        logoutButton.setOnClickListener {
+            finish()
+        }
     }
 
     override fun onBackPressed() {
