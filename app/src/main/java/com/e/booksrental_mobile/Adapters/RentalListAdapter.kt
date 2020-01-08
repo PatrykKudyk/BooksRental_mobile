@@ -29,8 +29,8 @@ class RentalListAdapter(val rentalList: Array<Rental>): RecyclerView.Adapter<Ren
                 " " + rentalList.get(position).location.building_number + "/" +
                 rentalList.get(position).location.office_number
 
-//        holder.view.setOnClickListener {
-//
-//        }
+        holder.view.setOnClickListener {
+
+        }
     }
 }
