@@ -12,4 +12,5 @@
     <string name="search_books_by_name_button">Wyszukaj książki po tytule</string>
     <string name="rental_list_title">Znalezione wypożyczalnie</string>
     <string name="logout_button">Wyloguj</string>
+    <string name="rental_book_list">Książki znalezione w wypożyczalni</string>
 </resources>
