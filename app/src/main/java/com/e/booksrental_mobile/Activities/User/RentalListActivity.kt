@@ -2,6 +2,7 @@ package com.e.booksrental_mobile.Activities.User
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,6 +21,10 @@ class RentalListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rental_list)
 
+//        val displayMetrics = DisplayMetrics()
+//        windowManager.defaultDisplay.getMetrics(displayMetrics)
+//
+//        rental_list_recycler_view_user.layoutParams.height = displayMetrics.heightPixels - 256
         rental_list_recycler_view_user.layoutManager = LinearLayoutManager(this)
 
         val backButton = this.findViewById(R.id.back_button) as Button

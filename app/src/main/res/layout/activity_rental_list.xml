@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/josefinsansbold"
         android:text="@string/rental_list_title"
@@ -22,33 +22,33 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rental_list_recycler_view_user"
-        android:layout_width="395dp"
-        android:layout_height="453dp"
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/back_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/back_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/button_bottom_background"
         android:fontFamily="@font/josefinsansbold"
         android:text="@string/back_button"
-        android:textColor="@color/colorBlueLight"
         android:textAllCaps="false"
+        android:textColor="@color/colorBlueLight"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rental_list_recycler_view_user" />
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
