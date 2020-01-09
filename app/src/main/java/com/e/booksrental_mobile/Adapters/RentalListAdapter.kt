@@ -1,8 +1,10 @@
 package com.e.booksrental_mobile.Adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.e.booksrental_mobile.Activities.User.RentalBooksListActivity
 import com.e.booksrental_mobile.Activities.User.RentalListActivity
 import com.e.booksrental_mobile.Models.Rental
 import com.e.booksrental_mobile.R
@@ -29,8 +31,10 @@ class RentalListAdapter(val rentalList: Array<Rental>): RecyclerView.Adapter<Ren
                 " " + rentalList.get(position).location.building_number + "/" +
                 rentalList.get(position).location.office_number
 
-        holder.view.setOnClickListener {
-
+        holder.view.rental_row_layout.setOnClickListener {
+            val intent = Intent(holder.view.context ,RentalBooksListActivity::class.java)
+            intent.putExtra("rentalId", rentalList.get(position).id.toInt())
+            holder.view.context.startActivity(intent)
         }
     }
 }

@@ -3,15 +3,14 @@ package com.e.booksrental_mobile.Adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.e.booksrental_mobile.Models.Book
+import com.e.booksrental_mobile.Models.Rental
 import com.e.booksrental_mobile.R
 import com.e.booksrental_mobile.ViewHolders.RentalBookListViewHolder
-import com.e.booksrental_mobile.ViewHolders.RentalListViewHolder
 import kotlinx.android.synthetic.main.book_simple_row.view.*
 
-class RentalBookListAdapter(val bookList: Array<Book>): RecyclerView.Adapter<RentalBookListViewHolder>(){
+class RentalBookListAdapter(val rental: Rental): RecyclerView.Adapter<RentalBookListViewHolder>(){
     override fun getItemCount(): Int {
-        return bookList.size
+        return rental.books.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RentalBookListViewHolder {
@@ -21,9 +20,9 @@ class RentalBookListAdapter(val bookList: Array<Book>): RecyclerView.Adapter<Ren
     }
 
     override fun onBindViewHolder(holder: RentalBookListViewHolder, position: Int) {
-        holder.view.book_title_text_view.text = bookList.get(position).title
-        holder.view.book_release_date_text_view.text = bookList.get(position).release_year.toString()
-        if(bookList.get(position).is_loan){
+        holder.view.book_title_text_view.text = rental.books.get(position).title
+        holder.view.book_release_date_text_view.text = rental.books.get(position).release_year.toString()
+        if(rental.books.get(position).is_loan){
             holder.view.book_loan_status_button.setBackgroundResource(R.drawable.book_status_icon_taken)
         } else{
             holder.view.book_loan_status_button.setBackgroundResource(R.drawable.book_status_icon_free)

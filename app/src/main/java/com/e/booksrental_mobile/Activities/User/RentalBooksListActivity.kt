@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.e.booksrental_mobile.Adapters.RentalBookListAdapter
-import com.e.booksrental_mobile.Models.Book
+import com.e.booksrental_mobile.Models.Rental
 import com.e.booksrental_mobile.R
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_rental_books_list.*
@@ -51,10 +51,10 @@ class RentalBooksListActivity : AppCompatActivity() {
 
                 val gson = GsonBuilder().create()
 
-                val books = gson.fromJson(body, Array<Book>::class.java)
+                val rental = gson.fromJson(body, Rental::class.java)
 
                 runOnUiThread{
-                    books_list_recycler_view.adapter = RentalBookListAdapter(books)
+                    books_list_recycler_view.adapter = RentalBookListAdapter(rental)
                 }
             }
         })
