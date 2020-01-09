@@ -37,7 +37,7 @@ class RentalListActivity : AppCompatActivity() {
 
     }
 
-    fun fetchRentalList(){
+    private fun fetchRentalList(){
         val url = "http://books-rental-backend.eu-central-1.elasticbeanstalk.com/rental/"
 
         val request = Request.Builder().url(url).build()
