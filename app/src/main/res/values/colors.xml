@@ -12,6 +12,8 @@
     <color name="colorPurpleLight">#8080FF</color>
     <color name="colorPurpleMedium">#7355F2</color>
     <color name="colorPurpleOriginLightContrast">#619BFF</color>
+    <color name="colorRedPastele">#f25454</color>
+    <color name="colorGreedPastele">#a3f254</color>
 
 
 </resources>
