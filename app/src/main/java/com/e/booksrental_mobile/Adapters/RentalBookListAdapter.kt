@@ -1,8 +1,10 @@
 package com.e.booksrental_mobile.Adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.e.booksrental_mobile.Activities.User.BookInfoDisplayActivity
 import com.e.booksrental_mobile.Models.Rental
 import com.e.booksrental_mobile.R
 import com.e.booksrental_mobile.ViewHolders.RentalBookListViewHolder
@@ -30,7 +32,9 @@ class RentalBookListAdapter(val rental: Rental): RecyclerView.Adapter<RentalBook
             holder.view.book_loan_status_button.setBackgroundResource(R.drawable.book_status_icon_free)
         }
         holder.view.book_row_layout.setOnClickListener {
-
+            val intent = Intent(holder.view.context, BookInfoDisplayActivity::class.java)
+            intent.putExtra("bookId", rental.books.get(position).id)
+            holder.view.context.startActivity(intent)
         }
     }
 }

@@ -13,4 +13,11 @@
     <string name="rental_list_title">Znalezione wypożyczalnie</string>
     <string name="logout_button">Wyloguj</string>
     <string name="rental_book_list">Książki znalezione w wypożyczalni</string>
+    <string name="book_info">Podstawowe informacje</string>
+    <string name="thick_cover">Okładka gruba</string>
+    <string name="thin_cover">Okładka cienka</string>
+    <string name="description">Opis</string>
+    <string name="pages">Strony - </string>
+    <string name="publishing_house">Wydawnictwo - </string>
+    <string name="rental_place">Miejsce - </string>
 </resources>
