@@ -38,9 +38,9 @@ class BookDisplayAdapter(val book: Book): RecyclerView.Adapter<BookDisplayViewHo
                 book.publishing_house_id.name
         holder.view.book_rental_text_view.text = holder.view.context.getString(R.string.rental_place) +
                 book.rental_id.name
-        holder.view.book_rental_address_text_view.text = book.rental_id.location.street + " " +
-                book.rental_id.location.building_number + "/" + book.rental_id.location.office_number +
-                ", " + book.rental_id.location.city
+        holder.view.book_rental_address_text_view.text = book.rental_id.location_id.street + " " +
+                book.rental_id.location_id.building_number + "/" + book.rental_id.location_id.office_number +
+                ", " + book.rental_id.location_id.city
     }
 
 

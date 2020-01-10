@@ -25,11 +25,11 @@ class RentalListAdapter(val rentalList: Array<Rental>): RecyclerView.Adapter<Ren
 
     override fun onBindViewHolder(holder: RentalListViewHolder, position: Int) {
         holder.view.rental_name_text_view.text = rentalList.get(position).name
-        holder.view.rental_location_city_name.text = rentalList.get(position).location.city
-        holder.view.rental_location_state_name.text = rentalList.get(position).location.state
-        holder.view.rental_location_street.text = rentalList.get(position).location.street +
-                " " + rentalList.get(position).location.building_number + "/" +
-                rentalList.get(position).location.office_number
+        holder.view.rental_location_city_name.text = rentalList.get(position).location_id.city
+        holder.view.rental_location_state_name.text = rentalList.get(position).location_id.state
+        holder.view.rental_location_street.text = rentalList.get(position).location_id.street +
+                " " + rentalList.get(position).location_id.building_number + "/" +
+                rentalList.get(position).location_id.office_number
 
         holder.view.rental_row_layout.setOnClickListener {
             val intent = Intent(holder.view.context ,RentalBooksListActivity::class.java)

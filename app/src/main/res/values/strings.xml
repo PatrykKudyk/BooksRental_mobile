@@ -17,7 +17,7 @@
     <string name="thick_cover">Okładka gruba</string>
     <string name="thin_cover">Okładka cienka</string>
     <string name="description">Opis</string>
-    <string name="pages">Strony - </string>
-    <string name="publishing_house">Wydawnictwo - </string>
-    <string name="rental_place">Miejsce - </string>
+    <string name="pages">Strony -&#160;</string>
+    <string name="publishing_house">Wydawnictwo -&#160;</string>
+    <string name="rental_place">Miejsce -&#160;</string>
 </resources>

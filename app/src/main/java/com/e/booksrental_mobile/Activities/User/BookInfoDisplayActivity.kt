@@ -2,6 +2,7 @@ package com.e.booksrental_mobile.Activities.User
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.e.booksrental_mobile.Adapters.BookDisplayAdapter
 import com.e.booksrental_mobile.Models.Book
 import com.e.booksrental_mobile.R
@@ -17,6 +18,8 @@ class BookInfoDisplayActivity : AppCompatActivity() {
         setContentView(R.layout.activity_book_info_display)
 
         val bookId = intent.getSerializableExtra("bookId") as Long
+
+        book_detailed_info_recycler_view.layoutManager = LinearLayoutManager(this)
 
         fetchBook(bookId)
     }
