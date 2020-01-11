@@ -20,4 +20,10 @@
     <string name="pages">Strony -&#160;</string>
     <string name="publishing_house">Wydawnictwo -&#160;</string>
     <string name="rental_place">Miejsce -&#160;</string>
+    <string name="signup_title">Rejestracja</string>
+    <string name="hint_name">Imię</string>
+    <string name="hint_last_name">Nazwisko</string>
+    <string name="hint_password_repeat">Powtórz hasło</string>
+    <string name="hint_email">E-mail</string>
+    <string name="register_button">Zarejestruj</string>
 </resources>
