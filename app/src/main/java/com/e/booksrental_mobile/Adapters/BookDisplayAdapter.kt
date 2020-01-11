@@ -41,6 +41,7 @@ class BookDisplayAdapter(val book: Book): RecyclerView.Adapter<BookDisplayViewHo
         holder.view.book_rental_address_text_view.text = book.rental_id.location_id.street + " " +
                 book.rental_id.location_id.building_number + "/" + book.rental_id.location_id.office_number +
                 ", " + book.rental_id.location_id.city
+        holder.view.book_description_text_view.text = book.description
     }
 
 
