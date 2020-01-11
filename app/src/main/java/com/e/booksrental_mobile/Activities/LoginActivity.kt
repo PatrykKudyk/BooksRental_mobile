@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.e.booksrental_mobile.Activities.Admin.AdminMainMenu
 import com.e.booksrental_mobile.Activities.User.UserMainMenu
 import com.e.booksrental_mobile.R
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlin.math.log
 
 class LoginActivity : AppCompatActivity() {
@@ -44,6 +45,11 @@ class LoginActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this,"Wypełnij wszystkie pola", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        register_button.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
         }
     }
 
